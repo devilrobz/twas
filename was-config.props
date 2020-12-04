@@ -1,0 +1,26 @@
+ResourceType=ThreadPool
+ImplementingResourceType=Server
+ResourceId=Cell=!{cellName}:Node=!{nodeName}:Server=!{serverName}:ThreadPoolManager=:ThreadPool=
+
+maximumSize=100
+name=WebContainer
+minimumSize=100
+inactivityTimeout=60000
+
+
+ResourceType=JavaVirtualMachine
+ImplementingResourceType=Server
+ResourceId=Cell=!{cellName}:Node=!{nodeName}:Server=!{serverName}:JavaProcessDef=ID#JavaProcessDef_1183122130078:JavaVirtualMachine=ID#JavaVirtualMachine_1183122130078
+AttributeInfo=systemProperties(name,value)
+#
+#
+# 01.01: JVM Section -SubSection - System/Custom - Properties
+#
+DEVELOPER=WAS_WASSON
+APP_ENVIRONMENT_NAME=dev1
+log4j.configuration=dev1_log4j.xml
+client.encoding.override=UTF-8
+file.encoding=UTF-8
+DEPLOYED_ENVIRONMENT=LAB
+WHC_ASSIGNED_NAME=LAB_DEPLOY
+APPLICATION_INSTANCE_NAME=wasa
